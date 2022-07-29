@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Новости Узбекистана - Газета.uz</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/media.css">
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <a href="https://www.gazeta.uz/ru/">
+                    <img src="./images/gazeta_logo.png" alt="" class="gazeta_logo">
+                </a>
+                <nav class="navbar_1">
+                    <ul>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/society/" class="link">Общество</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/politics/" class="link">Политика</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/economy/" class="link">Экономика</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/sport/" class="link">Спорт</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/column/" class="link">Колумнисты</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/coronavirus/" class="link">Коронавирус</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="tash_index" href="https://tashindex.mimar.uz/?utm_source=gazeta&utm_medium=banner&utm_campaign=kmc&utm_content=landing+page&utm_term=gazeta+banner" class="index">
+                    <img src="./images/tashindex_green.svg" alt="index">
+                </a>
+                <div class="search" onclick="active_input()">
+                    <img src="./images/search.webp" class="search_icon" alt="search">
+                    <input type="search">
+                    <svg onclick="deactivate()" id="deactivate" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+                </div>
+                <div class="sign_in">
+                    <svg class="sign_in" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </div>                        
+                <div class="languages">
+                    <a href="https://www.gazeta.uz/uz/" class="language_taj_uzb">Ўзб</a>
+                    <a href="https://www.gazeta.uz/oz/" class="language_o'zb">O`zb</a>
+                    <a href="https://www.gazeta.uz/ru/" class="language_rus">Рус</a>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <section class="advertisement">
+                <a href="https://oa.afishamedia.net/www/delivery/cl.php?bannerid=9333&zoneid=79&source=index&sig=09fcfec9922a994913d3d1b64bd8e20668b15765fd4fb655e1ed17c999647ca3&oadest=https%3A%2F%2Fwww.a1qa.uz%2F%3Futm_source%3Dgazeta.uz">
+                    <img src="./images/advertisement.png" alt="advertisement">
+                </a>
+            </section>
+            <nav class="navbar_2">
+                <div class="item-1">
+                    <ul>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/">Главная</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/list/news/">Новости</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/list/articles/">Статьи</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/list/media/">Медиа</a>
+                        </li>
+                    </ul>    
+                </div>
+                <p class="date">17 июня, пятница</p>
+                <div class="item-2">
+                    <ul>
+                        <li>
+                            <a href="https://www.gazeta.uz/ru/coronavirus-stat/">COVID-19</a>
+                        </li>
+                        <li>
+                            <a href="https://www.afisha.uz/">Afisha</a>
+                        </li>
+                        <li>
+                            <a href="https://www.spot.uz/">Spot</a>
+                        </li>
+                        <li>
+                            <a href="https://zira.uz/">Zira</a>
+                        </li>
+                        <li>
+                            <a href="https://pogoda.uz/">Погода</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhU1dTDFfckVBBCyZP7XN1Dgdy9N1Qy5mo6Su0KfXMuRzJlA/viewform">Вакансии</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <article class="all_news">
+                <section class="section_1_news">
+                    <div class="main_news">
+                        <div class="main">
+                            <div class="item-1">
+                                <a class="heading" href="https://www.gazeta.uz/ru/2022/06/17/presidential-term/">
+                                    <img src="./images/main_news_first_img.jpg" alt="first">
+                                </a>
+                                <p class="date">Сегодня, 06:30 <span style="color:green; font-weight: 700;">✉54</span></p>
+                                <a href="https://www.gazeta.uz/ru/2022/06/17/presidential-term/">
+                                    <h3 class="heading_of_news">Шавкат Мирзиёев сможет участвовать в выборах, если будет принята новая Конституция — Садык Сафаев</h3>
+                                </a>
+                                <p class="info_of_news">Принятие новой Конституции даст возможность всем гражданам, в том числе действующему президенту, участвовать в выборах главы государства, заявил первый замглавы Сената Садык Сафаев. Он добавил, что Шавкат Мирзиёев «не является политиком, цепляющимся за власть».</p>
+                            </div>
+                            <div class="item-2">
+                                <a href="https://www.gazeta.uz/ru/2022/06/15/corruption/">
+                                    <img src="./images/main_news_second_img.jpg" alt="second">
+                                </a>
+                                <div class="news">
+                                    <div class="news_1">
+                                        <p class="date">15 июня 17:39  <span>✉17</span></p>
+                                        <a href="https://www.gazeta.uz/ru/2022/06/15/corruption/">«Ташкент — один из самых коррумпированных регионов страны» — глава Антикоррупционного агентства</a>
+                                    </div>
+                                    <div class="news_2">
+                                        <p class="date">14 июня 17:51 <span>✉16</span></p>
+                                        <a href="https://www.gazeta.uz/ru/2022/06/14/nomoz-jumayev/">Саксауловый лес «Победителя пустыни» хотят продать на аукционе</a>
+                                    </div>
+                                    <div class="news_3">
+                                        <p class="date">15 июня 17:39 <span>✉17</span></p>
+                                        <a href="https://www.gazeta.uz/ru/2022/06/13/metro/">Когда завершат второй этап кольцевого метро и во сколько это обойдётся</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coronavirus">
+                                <div class="informations_of_coronavirus">
+                                    <div class="in_uzb">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-virus2" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 0a1 1 0 0 0-1 1v1.143c0 .557-.407 1.025-.921 1.24-.514.214-1.12.162-1.513-.231l-.809-.809a1 1 0 1 0-1.414 1.414l.809.809c.393.394.445.999.23 1.513C3.168 6.593 2.7 7 2.142 7H1a1 1 0 0 0 0 2h1.143c.557 0 1.025.407 1.24.921.214.514.162 1.12-.231 1.513l-.809.809a1 1 0 0 0 1.414 1.414l.809-.809c.394-.394.999-.445 1.513-.23.514.214.921.682.921 1.24V15a1 1 0 1 0 2 0v-1.143c0-.557.407-1.025.921-1.24.514-.214 1.12-.162 1.513.231l.809.809a1 1 0 0 0 1.414-1.414l-.809-.809c-.394-.394-.445-.999-.23-1.513.214-.514.682-.921 1.24-.921H15a1 1 0 1 0 0-2h-1.143c-.557 0-1.025-.407-1.24-.921-.214-.514-.163-1.12.231-1.513l.809-.809a1 1 0 1 0-1.415-1.414l-.808.809c-.394.393-.999.445-1.513.23C9.407 3.168 9 2.7 9 2.142V1a1 1 0 0 0-1-1Zm2 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7 7a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm1 5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm4-4a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/>
+                                        </svg>
+                                        <p class="temp">Коронавирус</p>
+                                        <p class="in_uzb">Коронавирус в Узбекистане</p>
+                                    </div>
+                                    <div class="in_the_world">
+                                        <p>В мире</p>
+                                    </div>
+                                    <a class="more" href="https://www.gazeta.uz/ru/coronavirus-stat/"><span style="font-size: 20px;">&#129106;</span>Статистика</a>
+                                </div>
+                                <div class="coronavirus_stats">
+                                    <div class="stats_of_uzb">
+                                        <div class="stats">
+                                            <div class="total">
+                                                <p class="quantity">239 435</p>
+                                                <p class="category">выявленных <br> случаев</p>
+                                            </div>
+                                            <div class="healthy">
+                                                <p class="quantity">237 549</p>
+                                                <p class="category">выздоровели</p>
+                                            </div>
+                                            <div class="dead">
+                                                <p class="quantity">1 637</p>
+                                                <p class="category">умерших</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stats_of_world">
+                                        <div class="stats">
+                                            <div class="total">
+                                                <p class="quantity">538 457 919</p>
+                                                <p class="category">выявленных <br> случаев</p>
+                                            </div>
+                                            <div class="healthy">
+                                                <p class="quantity">130 899 063</p>
+                                                <p class="category">выздоровели</p>
+                                            </div>
+                                            <div class="dead">
+                                                <p class="quantity">6 317 471</p>
+                                                <p class="category">умерших</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="info_of_coronavirus">Данные: Минздрав Узбекистана, Университет Джонса Хопкинса (США)</p>
+                        <div class="all_of_them">
+                            <div class="news"> <!-- 1 --> 
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/18/zira/">
+                                        <img src="./images/images_of_news/1.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Сегодня, 15:36</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/18/car-window-tinting/" class="heading_of_news">«Тонировка машин должна быть бесплатной» — Комил Алламжонов</a>
+                                    <p class="info">Глава попечительского совета фонда масс-медиа Комил Алламжонов считает, что тонировка автомобилей должна быть бесплатной. В последние недели в сети пользователи запустили челлендж с хэштегом #Тонировка_не_преступление.</p>
+                                </div>
+                            </div> 
+                            <div class="news"> <!-- 2 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/18/zira/">
+                                        <img src="./images/images_of_news/2.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Сегодня, 10:15</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/18/zira/" class="heading_of_news">Что приготовить: мороженое</a>
+                                    <p class="info">Сэндвич-мороженое с печеньем, персиковое, клубничное, сливочное, бананово-ягодное и другие рецепты мороженого — в подборке от Zira.uz.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 3 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/18/football/">
+                                        <img src="./images/images_of_news/3.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Сегодня, 10:09 <span>_3</span> </p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/18/football/" class="heading_of_news">Беспорядки при продаже билетов: что произошло у стадиона «Бунёдкор»</a>
+                                    <p class="info">У стадиона «Бунёдкор» в Ташкенте сотни болельщиков пытались купить билеты на финальный матч Кубка Азии U-23. Скопление людей привело к беспорядкам. Сообщается, что правоохранительные органы использовали слезоточивый газ, чтобы разогнать толпу, но Нацгвардия опровергает применение спецсредств и силы.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 4 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/18/alfraganus-1/">
+                                        <img src="./images/images_of_news/4.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Сегодня, 9:00</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/18/alfraganus-1/" class="heading_of_news">Alfraganus: гарантированные арендаторы в коммерческих помещениях ритейл-парка</a>
+                                    <p class="info">Bizning Uylar Development предлагает приобрести коммерческую недвижимость с гарантированными арендаторами в ритейл-парке Alfraganus, который находится в пяти минутах от центра Ташкента.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 5 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/tokaev/">
+                                        <img src="./images/images_of_news/5.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 21:59 <span>_5</span> </p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/tokaev/" class="heading_of_news">Касым-Жомарт Токаев заявил о непризнании «квазигосударств» ДНР и ЛНР</a>
+                                    <p class="info">Казахстан не признает «квазигосударственные территории» в лице Луганской и Донецкой народных республик, заявил президент страны Касым-Жомарт Токаев. «Если право наций на самоопределение будет реализовано, то вместо 193 государств на Земле возникнет более 500−600 стран. Это будет хаос», — сказал он.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 6 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/hematology-center/">
+                                        <img src="./images/images_of_news/6.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 21:42 <span>_4</span> </p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/hematology-center/" class="heading_of_news">Президент навестил пациентов в Центре детской онкологии и гематологии</a>
+                                    <p class="info">Шавкат Мирзиёев посетил новый Центр детской гематологии, онкологии и клинической иммунологии. «Цель моего приезда — придать вам силы, усилить ваши надежды. Это испытание для всех нас», — сказал президент лечащимся в центре детям и их матерям.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 7 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/afisha/">
+                                        <img src="./images/images_of_news/7.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 21:15</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/afisha/" class="heading_of_news">Куда сходить на выходных в Ташкенте</a>
+                                    <p class="info">Четыре кинопремьеры, сеансы под открытым небом, концерты, Сабантуй в центре столицы, выставки и ярмарки, акции в магазинах, детские развлекательные программы, творческие мастер-классы, вечеринки и в ресторанах и аквапарках и другие мероприятия предстоящих выходных — в подборке Afisha.uz.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 8 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/sanitation-on-markets/">
+                                        <img src="./images/images_of_news/8.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 21:05 <span>_2</span> </p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/sanitation-on-markets/" class="heading_of_news">СЭС рассказала о нарушениях на дехканских рынках</a>
+                                    <p class="info">За пять месяцев СЭС выявила нарушения санитарных правил при продаже продуктов на 61 дехканском рынке в Узбекистане. Пятая часть рынков не подключена к водопроводной сети, более половины рынков не канализованы, сообщается и о других проблемах.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 9 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/special-representative/">
+                                        <img src="./images/images_of_news/9.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 19:57</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/special-representative/" class="heading_of_news">Какие задачи поставлены перед спецпредставителем президента по внешней политике</a>
+                                    <p class="info">Должность спецпредставителя президента по внешней политике, которую занял Абдулазиз Камилов, включена в структуру Администрации главы государства и приравнена по статусу и условиям оплаты труда к заместителю советника президента. В указе президента определены основные задачи спецпредставителя.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 10 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/referendum/">
+                                        <img src="./images/images_of_news/10.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 19:56</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/referendum/" class="heading_of_news">В закон о референдуме внесены поправки</a>
+                                    <p class="info">Президент подписал поправки в закон о референдуме, которые предусматривают изменения полномочий избирательных комиссий, расширение прав наблюдателей и другое. Кроме того, теперь решения, принятые референдумом, могут быть отменены не только путём референдума.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 11 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/ecobozor/">
+                                        <img src="./images/images_of_news/11.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 19:00</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/ecobozor/" class="heading_of_news">Сеть рынков Ecobozor объявила об открытии второго филиала</a>
+                                    <p class="info">18 и 19 июня состоится грандиозное открытие нового торгового комплекса Ecobozor Beruniy.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 12 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/meteo/">
+                                        <img src="./images/images_of_news/12.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 17:47</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/meteo/" class="heading_of_news">Дожди с грозами и град возможны 20−22 июня</a>
+                                    <p class="info">В начале следующей недели по Узбекистану пройдут дожди с грозами, в некоторых районах возможно выпадение града. Возможны порывы до 23−28 м/с, местами с пыльным поземком. В ряде областей селеопасно.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 13 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/asus-cimerman/">
+                                        <img src="./images/images_of_news/13.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 17:00</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/asus-cimerman/" class="heading_of_news">Спецпроект: один день с Алиной Цимерман</a>
+                                    <p class="info">«Один день с» — это спецпроект ASUS, серия материалов, в котором лидеры мнений рассказывают об одном дне из своей повседневной жизни. Цель проекта — показать, чем наполнен их день и сколько задач приходится выполнять на самом деле.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 14 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/metro/">
+                                        <img src="./images/images_of_news/14.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 16:52 <span>_9</span></p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/metro/" class="heading_of_news">Поезд остановился на эстакаде кольцевой линии метро</a>
+                                    <p class="info">В соцсетях появилось видео, на котором видны искры под колёсами состава метро, стоящего на эстакаде. Инцидент произошёл между 6-й и 7-й станциями кольцевой линии. Причиной стало повреждение металлической конструкции из-за сильного ветра.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 15 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/drowning/">
+                                        <img src="./images/images_of_news/15.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 15:31</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/drowning/" class="heading_of_news">16-летний юноша утонул в канале в Ургуте</a>
+                                    <p class="info">В канале Зарафшан в Ургутском районе Самаркандской области утонул 16-летний юноша. Его тело нашли спустя 8 дней поисковых работ.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 16 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/meat/">
+                                        <img src="./images/images_of_news/16.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 15:23 <span>_1</span></p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/meat/" class="heading_of_news">Водители Узбекистана начали возить грузы из Пакистана через Афганистан</a>
+                                    <p class="info">Дальнобойщики Узбекистана выполнили первую перевозку груза из Пакистана транзитом через Афганистан. Водители за неделю привезли партию мяса из порта Карачи в Ташкент.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 17 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/tbc-alter-ego/">
+                                        <img src="./images/images_of_news/17.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 15:00</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/tbc-alter-ego/" class="heading_of_news">TBC Bank и Alter Ego реализовали совместный проект «Наследие»</a>
+                                    <p class="info">Alter Ego и TBC Bank рассказали о совместном проекте «Наследие». Это серия видеороликов с интересными, но неизвестными широкой публике деятелями узбекской культуры.</p>
+                                </div>
+                            </div>
+                            <div class="news"> <!-- 18 -->
+                                <div class="image_of_news">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/weightlifting/">
+                                        <img src="./images/images_of_news/18.jpg" alt="image_of_news">
+                                    </a>
+                                </div>
+                                <div class="info_of_news">
+                                    <p class="date">Вчера, 14:55</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/17/weightlifting/" class="heading_of_news">Тяжелоатлеты Узбекистана завоевали ещё четыре медали на ЧМ</a>
+                                    <p class="info">Тяжелоатлетка из Узбекистана Нигора Сувонова завоевала три серебряные медали на чемпионате мира среди юниоров. Аброрбек Маруфбеков добавил в копилку сборной одну бронзовую медаль.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news_without_images">
+                            <div class="item-1">
+                                <div class="news"> <!-- 1 -->
+                                    <p class="date">Вчера, 16:04</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/hissar/">В Шахрисабзе открылся визит-центр Гиссарского заповедника</a>
+                                </div>
+                                <div class="news"> <!-- 2 -->
+                                    <p class="date">Вчера, 15:20</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/nemolchi-proposal/">Nemolchi.uz: Предложения по защите детей и подростков от сексуализированного насилия</a>
+                                </div>
+                                <div class="news"> <!-- 3 -->
+                                    <p class="date">Вчера, 14:39</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/miranda-warning/">«Правило Миранды» и принципы «Хабеас корпус» предложено отразить в Конституции</a>
+                                </div>
+                                <div class="news"> <!-- 4 -->
+                                    <p class="date">Вчера, 13:44</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/hokims/">Пришло время разделить полномочия хокимов и кенгашей — президент</a>
+                                </div>
+                                <div class="news"> <!-- 5 -->
+                                    <p class="date">Вчера, 13:34</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/documents/">Минюст предложил обновить порядок регистрации браков, разводов и рождений</a>
+                                </div>
+                            </div>
+                            <div class="item-2">
+                                <div class="news"> <!-- 1 -->
+                                    <p class="date">Вчера, 13:00</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/mirabad-avenue/">В Mirabad Avenue стартовали продажи новых квартир на третьей линии</a>
+                                </div>
+                                <div class="news"> <!-- 2 -->
+                                    <p class="date">Вчера, 12:27</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/meteo/">Прохладная погода сохранится в первой половине недели</a>
+                                </div>
+                                <div class="news"> <!-- 3 -->
+                                    <p class="date">Вчера, 12:11</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/france-elections/">Коалиция президента Франции не смогла набрать большинство в парламенте</a>
+                                </div>
+                                <div class="news"> <!-- 4 -->
+                                    <p class="date">Вчера, 12:03</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/death-penalty/">Президент предложил прописать запрет смертной казни в Конституции</a>
+                                </div>
+                                <div class="news"> <!-- 5 -->
+                                    <p class="date">Вчера, 11:14</p>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/khokim/">Решения экс-хокима Андижана, принятые в день задержания, отменены</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="fixed_anvertisements">
+                        <p class="popular">Популярное</p>
+                        <div class="other_news">
+                                <a href="https://www.gazeta.uz/ru/2022/06/15/incident/">Стали известны детали свадьбы, где жених бьёт невесту (24)</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/15/building/">Застройщика дома, где с 10 этажа упала девочка, привлекут к ответственности (20)</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/15/violence/">Видео побоев со свадьбы вызвало резонанс в зарубежных СМИ (16)</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/15/uzb-japan/">Кубок Азии U-23: Узбекистан победил Японию и вышел в финал (4)</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/15/without-spectators/">Футбол: Узбекистан U-23 проведёт полуфинальный матч с Японией без зрителей (9)</a>
+                        </div>
+                        <div class="main_advertisement">
+                                <a href="https://oa.afishamedia.net/www/delivery/cl.php?bannerid=9418&zoneid=11&sig=48ba134b4274b53a1afc3c086046b7ccd5b9a91598352485b6bd91fc0a93d024&oadest=https%3A%2F%2Fwww.gazeta.uz%2Fru%2F2022%2F04%2F06%2Fkombinat-stroymaterialov%2F" class="main_advertisement">
+                                    <img src="./images/main_advertisement.jpg" alt="main_advertisement">
+                                </a>
+                                <div class="other_links">
+                                    <a href="https://docs.google.com/presentation/d/1oi6Qyz-SLS4JfxElibQgopCfFWMa5-KQ-_GhqmG5Rpw/">Медиакит</a>
+                                    <a href="https://www.gazeta.uz/ru/reklama">Цены</a>
+                                    <a href="https://www.gazeta.uz/ru/contact">Контакты</a>
+                                </div>
+                        </div>
+                        <p>Курсы валют (ЦБ) 1 июля</p>
+                        <div class="currency">
+                                <div class="dollar">
+                                    <p class="name">USD</p>
+                                    <p class="value">10 969,48 сум</p>
+                                    <p class="increase">+9,37</p>
+                                </div>
+                                <div class="euro">
+                                    <p class="name">EUR</p>
+                                    <p class="value">11 419,23 сум</p>
+                                    <p class="increase">-83,41</p>
+                                </div>
+                                <div class="ruble">
+                                    <p class="name">RUB</p>
+                                    <p class="value">193,29 сум</p>
+                                    <p class="increase">-0,01</p>
+                                </div>
+                        </div>
+                        <p class="gallery">Фотолента</p>
+                        <div class="gallery">
+                                <div class="img-1">
+                                    <a href="https://www.gazeta.uz/ru/fotolenta/110623/">
+                                        <img src="./images/gallery_1.jpg" alt="first">
+                                    </a>
+                                </div>
+                                <div class="img-2-3">
+                                    <a href="https://www.gazeta.uz/ru/fotolenta/109869/">
+                                        <img src="./images/gallery_2.jpg" alt="second">
+                                    </a>
+                                    <a href="https://www.gazeta.uz/ru/fotolenta/109677/">
+                                        <img src="./images/gallery_3.jpg" alt="third">
+                                    </a>
+                                </div>
+                        </div>
+                        <div class="social_medias">
+                                <a href="https://telegram.me/gazetauz">
+                                    <img src="./images/telegram.png" alt="telegram" class="telegram">
+                                </a>
+                                <p>Мобильные приложения</p>
+                                <div class="item-2">
+                                    <a href="https://itunes.apple.com/us/app/gazeta.uz/id550064053?l=ru&ls=1&mt=8">
+                                        <img src="./images/app_store.png" alt="app_store">
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.afishamedia.gazeta">
+                                        <img src="./images/google_play.png" alt="google_play">
+                                    </a>
+                                </div>
+                        </div>
+                    </aside>
+                </section>
+                <section class="advertisement-2">
+                    <a href="https://oa.afishamedia.net/www/delivery/cl.php?bannerid=8144&zoneid=12&source=index&sig=338d96802aa484137fcf9fca356148300354fff7d599f3d0588e4f40dcfbe49a&oadest=https%3A%2F%2Fshop.zira.uz%2F">
+                        <img src="./images/advertisement-2.jpg" alt="advertisement-2">
+                    </a>
+                </section>
+                <section class="generalized_news">
+                        <section class="society"> <!-- 1 -->
+                            <a href="https://www.gazeta.uz/ru/society/">Общество</a>
+                            <div class="main_news">
+                                <div class="item-1">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/21/sabantuy/">
+                                            <img src="./images/society.jpg" alt="main_image">
+                                        </a>
+                                        <a href="https://www.gazeta.uz/ru/2022/06/21/sabantuy/" class="heading">«Праздник народный, родной». Как прошёл Сабантуй-2022 в Ташкенте.</a>
+                                        <p class="info">В столичном Central Park отметили Сабантуй — самый весёлый и любимый праздник татарского и башкирского народов. Шестичасовая программа включала в себя концерты фольклорных ансамблей и популярных исполнителей, выставки прикладного искусства и национального костюма, спортивные состязания и игры.</p>
+                                        <p class="date">Сегодня, 13:33</p>
+                                </div>
+                                <div class="item-2">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/21/unicef/" class="heading">ЮНИСЕФ выразил обеспокоенность по случаям насилия в отношении женщин и детей в Узбекистане</a>
+                                        <p class="info">В ЮНИСЕФ обеспокоены случаями насилия в отношении женщин и детей в Узбекистане, которые кажутся обычным явлением: некоторые инциденты, включая случаи с младенцами, происходят публично и в присутствии наблюдающих. В организации подчеркнули необходимость создания института социальных работников.</p>
+                                        <p class="date">Сегодня, 13:19</p>
+                                </div>
+                                <div class="item-3">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/21/durable-jbi/" class="heading">Принципы римского права могут прописать в Конституции</a>
+                                        <p class="info">В шоуруме Durable ЖБИ наглядно представлены решения для зданий, инженерных сооружений и дорожного строительства.</p>
+                                        <p class="date">Сегодня, 11:00</p>
+                                </div>
+                            </div>
+                            <aside class="news_without_images">
+                                <a href="https://www.gazeta.uz/ru/2022/06/21/andijan-case/"><span>21.06</span> В убийстве двух детей в Андижане подозревается родственница</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/21/tunnels/"><span>21.06</span> Отправлявшие контрабанду через тоннели в Кыргызстан получили от 6 до 8 лет</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/21/mental-health/"><span>21.06</span> Здоровье без психического здоровья в принципе невозможно — ВОЗ</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/20/rain/"><span>20.06</span> Фото. Ливень в Ташкенте: затопленные улицы и заторы</a>
+                            </aside>
+                        </section>
+                        <section class="politics"> <!-- 2 -->
+                            <a href="https://www.gazeta.uz/ru/politics/">Политика</a>
+                            <div class="main_news">
+                                    <div class="item-1">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/20/presidents-proposals/">
+                                            <img src="./images/politics.jpg" alt="main_image">
+                                        </a>
+                                        <a href="https://www.gazeta.uz/ru/2022/06/20/ferghana-valley/" class="heading">Какие поправки в Конституцию предложил Шавкат Мирзиёев</a>
+                                        <p class="info">Шавкат Мирзиёев озвучил ряд предложений по поправкам в Конституцию: возвышение человеческого достоинства, «Узбекистан — социальное государство», право инициировать законы гражданами (группой из 100 тысяч человек), определение в Конституции статуса махалли и другое.</p>
+                                        <p class="date">Вчера, 21:32</p>
+                                    </div>
+                                    <div class="item-2">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/20/kabul/" class="heading">Абдулазиз Камилов совершил первый визит в Афганистан в новом качестве</a>
+                                        <p class="info">В ходе визита в Кабул спецпредставитель президента Узбекистана по внешней политике Абдулазиз Камилов пригласил главу МИД временного правительства Афганистана Амирахана Муттаки принять участие в конференции по Афганистану, которая пройдет в июле в Ташкенте, на что тот ответил согласием.</p>
+                                        <p class="date">Вчера, 17:53</p>
+                                    </div>
+                                    <div class="item-3">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/20/roman-law/" class="heading">Принципы римского права могут прописать в Конституции</a>
+                                        <p class="info">В законодательстве Узбекистана есть нормы, выполнение которых невозможно, заявил президент. Он предложил включить в Конституцию норму о том, чтобы не возлагать на граждан невыполнимых требований. Он также считает, что неприкосновенность частной жизни надо закрепить на уровне Основного закона.</p>
+                                        <p class="date">Вчера, 17:48</p>
+                                    </div>
+                            </div>
+                            <aside class="news_without_images">
+                                <a href="https://www.gazeta.uz/ru/2022/06/20/miranda-warning/"><span>20.06</span> «Правило Миранды» и принципы «Хабеас корпус» предложено отразить в Конституции</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/20/referendum/"><span>20.06</span> Президент предложил принять поправки в Конституцию через референдум</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/20/hokims/"><span>20.06</span> Пришло время разделить полномочия хокимов и кенгашей — президент</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/20/death-penalty/"><span>20.06</span> Президент предложил прописать запрет смертной казни в Конституции</a>
+                            </aside>
+                        </section>
+                        <section class="economy"> <!-- 3 -->
+                            <a href="https://www.gazeta.uz/ru/economy/">Экономика</a>
+                            <div class="main_news">
+                                    <div class="item-1">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/20/ferghana-valley/">
+                                            <img src="./images/economy.jpg" alt="main_image">
+                                        </a>
+                                        <a href="https://www.gazeta.uz/ru/2022/06/20/ferghana-valley/" class="heading">Рано Джураева — о том, почему Ферганской долине нужен единый аэропорт</a>
+                                        <p class="info">Глава Uzbekistan Airports Рано Джураева рассказала о двух сценариях развития аэропортов Ферганской долины: реконструкция и строительство новых аэропортов на их нынешних местах и возведение единой воздушной гавани для трёх областей. По её словам, в первом случае рисков оказалось много.</p>
+                                        <p class="date">Вчера, 20:14</p>
+                                    </div>
+                                    <div class="item-2">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/20/tashkent-airport/" class="heading">Целесообразность переноса аэропорта Ташкента обсуждается с президентом — Рано Джураева</a>
+                                        <p class="info">Президент и правительство обсуждают целесообразность переноса аэропорта Ташкента за пределы города. Глава Uzbekistan Airports Рано Джураева считает, что текущих мощностей воздушной гавани хватит максимум до 2027 года из-за невозможности строить новые взлётно-посадочные полосы.</p>
+                                        <p class="date">Вчера, 19:11</p>
+                                    </div>
+                                    <div class="item-3">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/20/iaea/" class="heading">Узбекистан примет миссию МАГАТЭ по оценке площадки для АЭС</a>
+                                        <p class="info">«Узатом» проводит подготовку к миссии МАГАТЭ по оценке безопасности на площадке сооружения АЭС. На семинаре будут презентованы международные нормы и правила по размещению ядерных технологий.</p>
+                                        <p class="date">Вчера, 16:43</p>
+                                    </div>
+                            </div>
+                            <aside class="news_without_images">
+                                <a href="https://www.gazeta.uz/ru/2022/06/20/silk-avia/"><span>20.06</span> Первые рейсы Silk Avia запланированы на осень</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/17/meat/"><span>17.06</span> Водители Узбекистана начали возить грузы из Пакистана через Афганистан</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/17/migrants/"><span>17.06</span> Кризис в России влияет на экономическую ситуацию в странах ЦА — МОМ</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/16/poultry-farming/"><span>16.06</span> Птицефермам дадут льготные кредиты и субсидии на цыплят</a>
+                            </aside>
+                        </section>
+                        <section class="sport"> <!-- 4 -->
+                            <a href="https://www.gazeta.uz/ru/sport/">Спорт</a>
+                            <div class="main_news">
+                                <div class="item-1">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/kapadze/">
+                                        <img src="./images/sport.jpg" alt="main_image">
+                                    </a>
+                                    <a href="https://www.gazeta.uz/ru/2022/06/20/kapadze/" class="heading">«После этого поражения мы станем сильнее» — Тимур Кападзе</a>
+                                    <p class="info">Наставник молодёжной сборной Узбекистана не сдержал слёз после поражения в финале Кубка Азии и заявил, что его подопечные выходили на поле с целью победить. По его словам, после поражения от Саудовской Аравии команда станет только сильнее и в итоге достигнет своей цели, став чемпионом Азии.</p>
+                                    <p class="date">Вчера, 07:00</p>
+                                </div>
+                                <div class="item-2">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/19/uzb-ksa-final/" class="heading">Финал Кубка Азии U-23. Узбекистан уступил Саудовской Аравии</a>
+                                    <p class="info">Футболисты молодёжной сборной Узбекистана проиграли соперникам из Саудовской Аравии в финале Кубка Азии U-23 и завоевали «серебро» турнира (видео, фото, статистика).</p>
+                                    <p class="date">19 июня 19:55</p>
+                                </div>
+                                <div class="item-3">
+                                    <a href="https://www.gazeta.uz/ru/2022/06/19/tickets/" class="heading">Билеты на финал Кубка Азии были забронированы до выставления на продажу</a>
+                                    <p class="info">Ещё до выставления на продажу большая часть билетов на финал Кубка Азии U-23 оказалась забронирована за отдельными лицами и компаниями. Билеты с рук продаются по цене от 100 тысяч сумов до 100 долларов, тогда как их официальная стоимость составляла 25, 50 и 100 тысяч сумов.</p>
+                                    <p class="date">19 июня 15:55</p>
+                                </div>
+                            </div>
+                            <aside class="news_without_images">
+                                <a href="https://www.gazeta.uz/ru/2022/06/19/uzb-ksa-preview/"><span>19.06</span> Финал Кубка Азии U-23. Превью к матчу Узбекистан-Саудовская Аравия</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/19/fans/"><span>19.06</span> Нацгвардия призвала болельщиков вести себя культурно</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/18/football/"><span>18.06</span> Беспорядки при продаже билетов: что произошло у стадиона «Миллий»</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/17/weightlifting/"><span>17.06</span> Тяжелоатлеты Узбекистана завоевали ещё четыре медали на ЧМ</a>
+                            </aside>
+                        </section>
+                        <section class="columnists"> <!-- 5 -->
+                            <a href="https://www.gazeta.uz/ru/column/">Колумнисты</a>
+                            <div class="main_news">
+                                    <div class="item-1">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/09/constitution/">
+                                            <img src="./images/columnists.jpg" alt="main_image">
+                                        </a>
+                                        <a href="https://www.gazeta.uz/ru/2022/06/09/constitution/" class="heading">Реформа Конституции как шанс повысить контроль над законностью в госуправлении</a>
+                                        <p class="info">Реформа Конституции — реальный шанс улучшить контроль за госаппаратом и внедрить механизмы справедливости и верховенства закона в госуправление, пишет профессор Иса Хамедов. Он предлагает редакцию отдельных статей Конституции для закрепления в ней принципов и механизмов правового государства.</p>
+                                        <p class="date">9 июня 08:30</p>
+                                    </div>
+                                    <div class="item-2">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/06/constitution/" class="heading">Прозрачность — лучший ответ сомневающимся в реформе Конституции</a>
+                                        <p class="info">На сайте Законодательной палаты нет стенографических отчётов заседаний — и это не даёт возможности узнать, как и кем принимаются законодательные решения. Открытость нужна и на сайте конституционной реформы, пишет Леонид Хван. Глубокая прозрачность деятельности — лучший ответ сомневающимся.</p>
+                                        <p class="date">6 июня 14:15</p>
+                                    </div>
+                                    <div class="item-3">
+                                        <a href="https://www.gazeta.uz/ru/2022/05/27/constitution-reform/" class="heading">Как «обнулялись» президенты: мировой опыт</a>
+                                        <p class="info">Предыдущие конституционные реформы в Узбекистане позволяли обходить статью 90 Конституции, ограничивающую сроки президентства. Исследователи Университета Вирджиния изучили 60 попыток обхода установленных ограничений в разных странах. Как это происходило и к чему это приводило (бывали и курьёзы) — в обзоре Комила Джалилова.</p>
+                                        <p class="date">27 мая 11:23</p>
+                                    </div>
+                            </div>
+                            <aside class="news_without_images">
+                                <a href="https://www.gazeta.uz/ru/2022/04/22/sign-language/"><span>22.06</span> Постановление о нас без нас: Узбекский жестовый язык хотят развивать без участия его носителей?</a>
+                                <a href="https://www.gazeta.uz/ru/2022/04/22/yashil-makon/"><span>22.06</span> Матильда Димовска: Проекту «Яшил макон» требуется тщательное планирование и эффективная координация</a>
+                                <a href="https://www.gazeta.uz/ru/2022/04/14/shareholders-rights/"><span>14.06</span> Что выше: чиновники или закон?</a>
+                                <a href="https://www.gazeta.uz/ru/2022/04/12/media/"><span>12.06</span> Пока наши СМИ молчат, иностранные завладевают умами</a>
+                            </aside>
+                        </section>
+                        <section class="world"> <!-- 6 -->
+                            <a href="https://www.gazeta.uz/ru/world/">Мир</a>
+                            <div class="main_news">
+                                    <div class="item-1">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/21/lithuania/">
+                                            <img src="./images/world.jpg" alt="main_image">
+                                        </a>
+                                        <a href="https://www.gazeta.uz/ru/2022/06/21/lithuania/" class="heading">Россия пригрозила Литве «защитой национальных интересов» из-за ограничения грузового транзита</a>
+                                        <p class="info">Литва ограничила транзит грузов железной дорогой между Калининградом и основной частью России из-за санкций Евросоюза против РФ. МИД России заявил, что если в ближайшее время транзит не будет восстановлен, РФ «оставляет за собой право на действия по защите своих национальных интересов».</p>
+                                        <p class="date">Сегодня, 12:19</p>
+                                    </div>
+                                    <div class="item-2">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/21/nobel-auction/" class="heading">Нобелевская медаль Дмитрия Муратова продана за $103,5 млн для помощи украинцам</a>
+                                        <p class="info">Нобелевская медаль премии мира, полученная российским журналистом Дмитрием Муратовым, продана за 103,5 млн долларов на аукционе в Нью-Йорке. После вторжения России в Украину Муратов решил продать медаль и вырученные средства направить на помощь украинским беженцам.</p>
+                                        <p class="date">Сегодня, 11:24</p>
+                                    </div>
+                                    <div class="item-3">
+                                        <a href="https://www.gazeta.uz/ru/2022/06/20/badakhshan/" class="heading">«Деятельность террористических групп в Горном Бадахшане прекращена» — власти Таджикистана</a>
+                                        <p class="info">Власти Таджикистана сообщили о прекращении деятельности «организованных террористических групп» в Горном Бадахшане. Речь идёт о задержании порядка 220 человек и «нейтрализации» ещё 16. Ранее в ООН призывали Таджикистан прекратить репрессии против памирского меньшинства.</p>
+                                        <p class="date">Вчера, 19:54</p>
+                                    </div>
+                            </div>
+                            <aside class="news_without_images">
+                                <a href="https://www.gazeta.uz/ru/2022/06/20/france-elections/"><span>20.06</span> Коалиция президента Франции не смогла набрать большинство в парламенте</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/17/tokaev/"><span>17.06</span> Касым-Жомарт Токаев заявил о непризнании «квазигосударств» ДНР и ЛНР</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/17/ukraine/"><span>17.06</span> Франция, Германия, Италия и Румыния поддержали немедленный статус кандидата в члены ЕС для Украины</a>
+                                <a href="https://www.gazeta.uz/ru/2022/06/16/afghanistan/"><span>16.06</span> ООН призывает власти Афганистана отказаться от политики угнетения женщин</a>
+                            </aside>
+                        </section>
+                        <section class="poster"> <!-- 7 -->
+                            <a href="https://www.afisha.uz/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz">Афиша</a>
+                            <div class="main_news">
+                                    <div class="item-1">
+                                        <a href="https://www.afisha.uz/gorod/2022/06/21/dalahast/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz">
+                                            <img src="./images/poster/1.jpeg" alt="main_image">
+                                        </a>
+                                        <div class="info">
+                                            <a href="https://www.afisha.uz/gorod/2022/06/21/dalahast/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz" class="heading">Современное звучание узбекской лирики: мини-концерт Dalahast и интервью с Охистой Жамшид</a>
+                                            <p class="info">Это очень интересная группа, со своеобразным стилем, а солистка группы Охиста Джамшид —…</p>
+                                            <p class="date">21 июня 10:18</p>
+                                        </div>                                                
+                                    </div>
+                                    <div class="item-2">
+                                        <a href="https://www.afisha.uz/concerts/2022/06/21/meladze/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz">
+                                            <img src="./images/poster/2.png" alt="main_image">
+                                        </a>
+                                        <div class="info">
+                                            <a href="https://www.afisha.uz/concerts/2022/06/21/meladze/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz" class="heading">Концерт Валерия Меладзе в Ташкенте</a>
+                                            <p class="info">Зрителей ждет шоу-программа и хиты исполнителя.</p>
+                                            <p class="date">21 июня 09:34</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-2">
+                                        <a href="https://www.afisha.uz/concerts/2022/06/21/meladze/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz">
+                                            <img src="./images/poster/3.png" alt="main_image">
+                                        </a>
+                                        <div class="info">
+                                            <a href="https://www.afisha.uz/concerts/2022/06/21/meladze/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz" class="heading">Концерт Валерия Меладзе в Ташкенте</a>
+                                            <p class="info">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Зрителей ждет шоу-программа и хиты исполнителя.</p>
+                                            <p class="date">21 июня 09:34</p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <aside class="news_without_images">
+                                <a href="https://www.afisha.uz/cinema/2022/06/20/spiderhead-review/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz"><span>20.06</span> Тут и крыша может поехать: обзор фильма «Спайдерхед»</a>
+                                <a href="https://www.afisha.uz/gorod/2022/06/20/food-fest/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz"><span>20.06</span>  Food Festival перенесен на «ближайшие месяцы»</a>
+                                <a href="https://www.afisha.uz/gorod/2022/06/20/sabantuy/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz"><span>20.06</span> Сабантуй 2022 прошел в Central Park: как это было</a>
+                                <a href="https://www.afisha.uz/znaniya/2022/06/20/prokino/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz"><span>20.06</span> Тематическая «Мозгобойня: ПроКино: Голливудские фильмы»</a>
+                                <a href="https://www.afisha.uz/cinema/2022/06/20/cheburashka-trailer/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz"><span>20.06</span> Вышел тизер фильма «Чебурашка»</a>
+                                <a href="https://www.afisha.uz/cinema/2022/06/20/kung-fu-panda-netflix-trailer/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz"><span>20.06</span> Вышел трейлер мультсериала «Кунг-фу Панда: миссия Рыцарь дракона»</a>
+                                <a href="https://www.afisha.uz/restaurants/2022/06/20/pub-kebab/?utm_source=gazetauz&utm_medium=block&utm_campaign=afishauz"><span>20.06</span> Выступление Тахира Садыкова в Pub Kebab</a>
+                            </aside>
+                        </section>
+                        <section class="zira"> <!-- 8 -->
+                            <a href="https://zira.uz/ru/">Zira</a>
+                            <div class="main_news">
+                                    <div class="item-1">
+                                        <a href="https://zira.uz/ru/recipe/gruzinskiy-salat-acecili/">
+                                            <img src="./images/zira/1.jpg" alt="main_image">
+                                        </a>
+                                        <div class="info">
+                                            <a href="https://zira.uz/ru/recipe/gruzinskiy-salat-acecili/" class="heading">Грузинский салат «Ацецили»</a>
+                                            <p class="info">Ацецили — грузинский салат с удивительным вкусом. Благодаря идеальному сочетанию ингредиентов, специй и пряностей у салата неповторимый, оригинальный вкус. Приблизительная…</p>
+                                            <p class="date">20 июня 10:00</p>    
+                                        </div>                                            
+                                    </div>
+                                    <div class="item-2">
+                                        <a href="https://zira.uz/ru/2022/06/18/iyun-menyu-nedeli-n4/">
+                                            <img src="./images/zira/2.jpg" alt="main_image">
+                                        </a>
+                                        <div class="info">
+                                            <a href="https://zira.uz/ru/2022/06/18/iyun-menyu-nedeli-n4/" class="heading">Июнь: меню недели №4</a>
+                                            <p class="info">В этой подборке мы собрали простые домашние рецепты блюд на каждый день. Понедельник Завтрак- Тосты с пастой из авокадо и яйцами скрэмбл Обед- Картофельные ньокки Ужин-Крылышки в…</p>
+                                            <p class="date">18 июня 10:00</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-3">
+                                        <a href="https://zira.uz/ru/2022/06/17/podborka-blyud-i-salatov-iz-baklazhanov/">
+                                            <img src="./images/zira/3.jpg" alt="main_image">
+                                        </a>
+                                        <div class="info">
+                                            <a href="https://zira.uz/ru/2022/06/17/podborka-blyud-i-salatov-iz-baklazhanov/" class="heading">Подборка блюд и салатов из баклажанов</a>
+                                            <p class="info">С баклажанами можно приготовить едва ли не сотню разных блюд. А что именно приготовить — блюда с баклажанами, салаты или же заготовки на зиму — решать только вам.…</p>
+                                            <p class="date">17 июня 17:00</p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <aside class="news_without_images">
+                                <a href="https://zira.uz/ru/recipe/gruzinskiy-salat-acecili/"><span>20.06</span> Грузинский салат «Ацецили»</a>
+                                <a href="https://zira.uz/ru/2022/06/18/iyun-menyu-nedeli-n4/"><span>18.06</span> Июнь: меню недели №4</a>
+                                <a href="https://zira.uz/ru/2022/06/17/podborka-blyud-i-salatov-iz-baklazhanov/"><span>17.06</span> Подборка блюд и салатов из баклажанов</a>
+                                <a href="https://zira.uz/ru/2022/06/17/interesnoe-na-polkakh-margarin/"><span>17.06</span> Интересное на полках «Корзинки»: маргарин 365 kun</a>
+                                <a href="https://zira.uz/ru/recipe/shaurma-s-kuricey/"><span>17.06</span> Шаурма с курицей</a>
+                                <a href="https://zira.uz/ru/recipe/videorecept-rulet-tiramisu/"><span>16.06</span> Видеорецепт: рулет тирамису</a>
+                            </aside>
+                        </section>
+                </section>
+            </article>
+            <footer class="footer">
+                    <div class="item-1">
+                        <p class="first">&copy 2008-2022 «Газета.uz»</p>
+                        <p class="second">Новости для людей.</p>
+                        <p class="third">Нашли ошибку?</p>
+                        <p class="fourth">Нажмите Ctrl+Enter</p>
+                    </div>
+                    <div class="item-2">
+                        <div class="last_links">
+                            <a href="https://www.gazeta.uz/ru/reklama/" class="last_link">Реклама</a>
+                            <a href="https://www.gazeta.uz/ru/contact/" class="last_link">Контакты</a>
+                            <a href="https://www.gazeta.uz/ru/about/" class="last_link">О сайте</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhU1dTDFfckVBBCyZP7XN1Dgdy9N1Qy5mo6Su0KfXMuRzJlA/viewform" class="last_link">Вакансии</a>
+                            <a href="https://www.gazeta.uz/ru/privacy/" class="last_link">Политика конфиденциальности</a> <br>
+                            <a href="https://www.gazeta.uz/ru/terms/" class="last_link">Использование материалов</a>
+                            <a href="https://www.gazeta.uz/ru/feeds/" class="last_link">RSS</a>
+                            <a href="https://facebook.com/gazetauz/" class="last_link">Facebook</a>
+                            <a href="https://twitter.com/gazeta_uz/" class="last_link">Twitter</a>
+                            <a href="https://instagram.com/gazetauzb/" class="last_link">Instagram</a>
+                            <a href="https://telegram.me/gazetauz" class="last_link">Telegram</a>
+                        </div>
+                        <p class="info_about_gazeta_uz">
+                            <p>Воспроизводство, копирование, тиражирование, распространение и иное использование информации с сайта «Газета.uz» возможно только с предварительного письменного разрешения редакции.</p>
+                            <p>Регистрация электронного СМИ: №0460 от 13 августа 2019 года.</p>
+                            <p>Учредитель: ООО «Afisha Media»</p>
+                            <p>Главный редактор: Атаджанов Азамат Юсупбаевич</p>
+                            <p>Адрес: 100007, Ташкент, ул. Паркент, 26А</p>
+                            <p>Почта: <a href="#">info@gazeta.uz</a></p>
+                        </p>
+                    </div>
+                    <div class="item-3">
+                        <div class="18+">
+                            <p> 18+ </p>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+    </body>
+</html>

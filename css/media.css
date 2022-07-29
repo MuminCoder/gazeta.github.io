@@ -1,0 +1,174 @@
+/* 320px — 480px: Mobile devices. */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    /* Body */
+    
+    body {
+        width: 375px;
+        background-color: rgb(194, 194, 194);
+    }
+    
+    body > .main {
+        width: 100%;
+        margin-top: 50px;
+        padding: 0px 5px;
+    }
+    
+    body > .main > .advertisement {
+        width: 100vw;
+        margin-top: 15px;
+        display: none;
+    }
+    
+    body .main .advertisement img {
+        width: 100%;
+        height: 200px;
+        margin: 0 -5px;
+    }
+    
+    body .main > * {
+        width: 100vw;
+    }
+
+    /* Header */
+
+    .container {
+        width: 100vw;
+    }
+
+    header {
+        width: 100vw;
+        height: auto;
+        background-color: #3b83f2; 
+        display: flex;
+        align-items: center;
+        position: absolute;
+        margin-top: -50px;
+        box-shadow: none;
+    }
+
+    header > .container {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        margin: none;
+    }
+
+    header .navbar_1 {
+        display: none;
+    }
+
+    header .tash_index {
+        display: none;
+    }
+
+    header div.search img {
+        display: none;
+    }
+
+    header div.languages a {
+        display: none;
+    }
+
+    header .container > svg {
+        display: block;
+    }
+
+    header img {
+        display: flex;
+        margin-left: 40px;
+    }
+
+    header svg#hamburger,
+     header .container div.sign_in svg {
+        color: #fff;
+    }
+
+
+    /* Navbar-2 */
+
+    .navbar_2 {
+        display: none;
+    }
+    
+    article.all_news {
+        width: 100vw;
+    }
+
+    article.all_news .section_1_news .main_news .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article.all_news .section_1_news .main_news .main > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-right: -23px;
+    }
+
+    article.all_news .section_1_news .main_news .main > div > * {
+        width: 100vw;
+    }
+
+    article.all_news .section_1_news .main_news .main > div img {
+        width: 100vw;
+        margin-top: -15px;
+        margin-left: -5px;
+    }
+
+    article.all_news .section_1_news .main_news .main > div.item-2 {
+        margin-top: 20px;
+        margin-left: 0px;   
+        font-size: 17px;
+    }
+
+    article.all_news .section_1_news .main_news .main > div.item-2 .news {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .section_1_news aside.fixed_anvertisements > * {
+        display: none;
+    }
+
+    .coronavirus .informations_of_coronavirus p.in_uzb {
+        display: none;
+    }
+
+    .coronavirus .informations_of_coronavirus p.temp {  
+        display: block;
+    }
+
+    .coronavirus 
+
+    
+
+}
+
+/* 481px — 768px: iPads, Tablets. */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+}
+
+/* 769px — 1024px: Small screens, laptops. */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+/* 1025px — 1200px: Desktops, large screens. */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    
+}
+
+/* 1201px and more — Extra large screens, TV's */
+@media screen and (min-width: 1200px) {
+    
+}
